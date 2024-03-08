@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="@domcorleone">
+  <meta name="description" content="Macard-Servicos LDA official website">
+  <title>Macard & Serviços Lda</title>
+  <link rel="shortcut icon" href="./images/icon/favicon.ico" type="image/x-icon" />
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/styles.css">
+  <!-- gallery files-->
+  <link rel="stylesheet" href="/css/galeria.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+  <!-- Client or Partners logo slider -->
+  <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+</head>
+
+<body>
+  <!-- Header and Menus  -->
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-color">
+      <div class="container-fluid d-flex"> <!--container fluid was removed "container-fluid d-flex""-->
+        <a class="navbar-brand" href="#slider-section">
+          <img src="./images/macard-logo-transparent.png" alt="macard'servicos brand" width="75">
+          Macard & Serviços
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="true" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse show" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item ">
+              <a class="nav-link active" aria-current="page" href="#servicos-section">Serviços</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link active" aria-current="page" href="#clientes-section">Clientes</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link active" href="#quem-somos-section" aria-current="page">Quem Somos</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link active" href="#galeria-section">Galeria</a>
+            </li>
+
+            <li class="nav-item ">
+              <a class="nav-link active" href="#contacte-nos-section">Contacte-nos</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- Home/Slider section -->
+    <section id="slider-section">
+      <!-- <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container col-xxl-8 px-4 py-5">
+              <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                  <img src="./images/slide_01.png" class="d-block mx-lg-auto img-fluid rounded-corner"
+                    alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                </div>
+                <div class="col-lg-6">
+                  <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 text-color-navlink">Tratamento <span
+                      class="header-color-1">Mineiro</span></h1>
+                  <h2 class="text-body-emphasis">Perfuração e Desmonte </h2>
+                  <div class="lead">
+                    <p>Embasados na filosofia de oferecer serviços com qualidade
+                      e segurança, na área da mineração, tornando-se numa Empresa especializada
+                      em operações de perfuração e desmonte.</p>
+                  </div>
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <a href="#miner-treatment-section" class="btn btn-primary btn-lg px-4 me-md-2">
+                      Saiba mais
+                    </a>
+                    <a href="#contacte-nos-section" class="btn btn-outline-secondary btn-lg px-4">Contacte-nos</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container col-xxl-8 px-4 py-5">
+              <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                  <img src="./images/slide_02.png" class="d-block mx-lg-auto img-fluid rounded-corner"
+                    alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                </div>
+                <div class="col-lg-6">
+                  <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Sector <span
+                      class="header-color-1">Públicos</span></h1>
+                  <h2 class="text-body-emphasis">Confecções de Obras Públicas </h2>
+                  <p class="lead">Sendo a construção civil uma das nossas áreas de actuação,
+                    a Macard & Serviços joga um papel fundamental enquanto parceiro estratégico
+                    do Sector Público.</p>
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <a href="#public-sector-section" class="btn btn-primary btn-lg px-4 me-md-2">Saiba mais</a>
+                    <a href="#contacte-nos-section" class="btn btn-outline-secondary btn-lg px-4">Contacte-nos</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container col-xxl-8 px-4 py-5">
+              <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                  <img src="./images/slide_03.png" class="d-block mx-lg-auto img-fluid rounded-corner"
+                    alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                </div>
+                <div class="col-lg-6">
+                  <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Sector <span
+                      class="header-color-1">Privado</span></h1>
+                  <h2 class="text-body-emphasis">Confecções de Obras Privadas </h2>
+                  <p class="lead">A Macard & Serviços, torna o sonho da casa própria uma realidade, ajudando os seus clientes a idealizar a moradia que sempre sonharam em ter.</p>
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <a href="#private-sector-section" class="btn btn-primary btn-lg px-4 me-md-2">Saiba mais</a>
+                    <a href="#contacte-nos-section" class="btn btn-outline-secondary btn-lg px-4">Contacte-nos</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div> -->
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container col-xxl-8 px-4 py-5">
+              <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col col-sm col-lg-6">
+                  <img src="./images/slide_01.png" class="d-block mx-lg-auto img-fluid rounded-corner"
+                    alt="Tratamento Mineiro" width="700" height="500" loading="lazy">
+                </div>
+                <div class="col-lg-6">
+                  <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 text-color-navlink">Tratamento <span
+                      class="header-color-1">Mineiro</span></h1>
+                  <h2 class="text-body-emphasis">Perfuração e Desmonte </h2>
+                  <div class="lead">
+                    <p>Embasados na filosofia de oferecer serviços com qualidade
+                      e segurança, na área da mineração, tornando-se numa Empresa especializada
+                      em operações de perfuração e desmonte.</p>
+                  </div>
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <a href="#miner-treatment-section" class="btn btn-primary btn-lg px-4 me-md-2">
+                      Saiba mais
+                    </a>
+                    <a href="#contacte-nos-section" class="btn btn-outline-secondary btn-lg px-4">Contacte-nos</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container col-xxl-8 px-4 py-5">
+              <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col col-sm col-lg-6">
+                  <img src="./images/slide_02.png" class="d-block mx-lg-auto img-fluid rounded-corner"
+                    alt="Obras Publicas" width="700" height="500" loading="lazy">
+                </div>
+                <div class="col-lg-6">
+                  <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Sector <span
+                      class="header-color-1">Públicos</span></h1>
+                  <h2 class="text-body-emphasis">Confecções de Obras Públicas </h2>
+                  <p class="lead">Sendo a construção civil uma das nossas áreas de actuação,
+                    a Macard & Serviços joga um papel fundamental enquanto parceiro estratégico
+                    do Sector Público.</p>
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <a href="#public-sector-section" class="btn btn-primary btn-lg px-4 me-md-2">Saiba mais</a>
+                    <a href="#contacte-nos-section" class="btn btn-outline-secondary btn-lg px-4">Contacte-nos</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container col-xxl-8 px-4 py-5">
+              <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col col-sm col-lg-6">
+                  <img src="./images/slide_03.png" class="d-block mx-lg-auto img-fluid rounded-corner"
+                    alt="Obras Privadas" width="700" height="500" loading="lazy">
+                </div>
+                <div class="col-lg-6">
+                  <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Sector <span
+                      class="header-color-1">Privado</span></h1>
+                  <h2 class="text-body-emphasis">Confecções de Obras Privadas </h2>
+                  <p class="lead">A Macard & Serviços, torna o sonho da casa própria uma realidade, ajudando os seus
+                    clientes a idealizar a moradia que sempre sonharam em ter.</p>
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <a href="#private-sector-section" class="btn btn-primary btn-lg px-4 me-md-2">Saiba mais</a>
+                    <a href="#contacte-nos-section" class="btn btn-outline-secondary btn-lg px-4">Contacte-nos</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!-- Services Section -->
+    <section id="servicos-section">
+      <!-- <hr> -->
+      <h4 class="section-title">Serviços</h4>
+      <div class="divider"></div>
+      <div class="container">
+        <div class="row pb-4">
+          <div class="col-lg-4 mb-3 mt-3">
+            <div class="card card-size">
+              <img src="images/servicos/tratamento-mineiro.png" class="img-fluid card-img-top" alt="tratamento-mineiro">
+              <div class="card-body">
+                <h5 class="card-title">Tratamento Mineiro</h5>
+                <p class="card-text">Embasados na filosofia de oferecer serviços com qualidade
+                  e segurança, na área da mineração, tornando-se numa Empresa especializada...
+                </p>
+                <a href="#miner-treatment-section" class="btn btn-primary">ler mais</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-3 mt-3">
+            <div class="card card-size">
+              <img src="./images/servicos/obras-publicas.jpg" alt="obras publicas" class="img-fluid">
+              <div class="card-body">
+                <h5 class="card-title">Obras Públicas</h5> <!--Confecção de-->
+                <p class="card-text">Sendo a construção civil uma das nossas áreas de actuação, a Macard & Serviços joga
+                  um papel fundamental enquanto parceiro estratégico...</p>
+                <a href="#public-sector-section" class="btn btn-primary">ler mais</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-3 mt-3">
+            <div class="card card-size">
+              <img src="./images/servicos/obras-privadas.jpeg" alt="obras privadas" class="img-fluid">
+              <div class="card-body">
+                <h5 class="card-title">Obras Privadas</h5> <!--Confecção de -->
+                <p class="card-text">A Macard & Serviços, torna o sonho da casa própria uma realidade, ajudando os seus
+                  clientes a idealizarem a moradia que sempre sonharam.
+                </p>
+                <a href="#private-sector-section" class="btn btn-primary">ler mais</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Client Section -->
+    <section id="clientes-section">
+      <h4 class="section-title">Clientes</h4>
+      <div class="divider"></div>
+      <div class="container">
+        <div class="row">
+          <div class="regular slider">
+            <div>
+              <a href="https://www.catoca.com/" target="_blank" rel="noopener noreferrer">
+                <img src="./images/partners/catoca_logo.png" alt="catoca logo client">
+              </a>
+            </div>
+            <div>
+              <a href="https://med.gov.ao/ao/" target="_blank" rel="noopener noreferrer">
+                <img src="./images/partners/med_logo.png" alt="ministerio da educacao logo">
+              </a>
+            </div>
+            <div>
+              <a href="https://minsa.gov.ao/ao/" rel="noopener noreferrer" target="_blank">
+                <img src="./images/partners/minsa_logo.png" alt="ministerio da saude logo">
+              </a>
+            </div>
+            <div>
+              <a href="https://pna.gov.ao/" target="_blank" rel="noopener noreferrer">
+                <img src="./images/partners/policia_logo.png" alt="policia nacional logo">
+              </a>
+            </div>
+            <div class="client-card">
+              <a href="https://www.facebook.com/pages/Condom%C3%ADnio-Parque-Das-Ac%C3%A1cias/701073886644375"
+                target="_blank" rel="noopener noreferrer">
+                <img src="./images/partners/parque_acacias_logo.png" alt="parque das acacias logo">
+              </a>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#6c22a6"
+                class="bi bi-box-arrow-up-right client-link-icon" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
+                <path fill-rule="evenodd"
+                  d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" />
+              </svg>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Miner Processing Section -->
+    <section id="miner-treatment-section">
+      <h4 class="section-title">Tratamento Mineiro</h4>
+      <div class="divider"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 mb-3">
+            <img src="./images/slide_01.png" alt="Tratamento Mineiro" class="img-fluid picture">
+          </div>
+          <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1 header-color-2 mb-3">
+              Perfuração e Desmonte
+            </h2>
+            <p class="lead">Embasados na filosofia de oferecer serviços com qualidade e segurança, na área da mineração,
+              tornando-se numa Empresa especializada em operações de perfuração e desmonte.
+            </p>
+            <p class="lead">Operações de Perfuração:</p>
+            <ul class="lead">
+              <li>
+                <a class="btn btn-primary" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                  aria-controls="perfuracao-bancos-id" href="#perfuracao-bancos-id">Perfuração de Bancos</a>
+                <div class="collapse" id="perfuracao-bancos-id">
+                  <div class="card card-body bg-color no-shadow-card mt-1">Considerado um dos melhores métodos para
+                    desmonte de rochas.
+                    Através dele,
+                    dispõe-se de uma face livre para saída do material, além de facilitar uma melhor sistematização dos
+                    resultados.
+                    Sua utilização pode acontecer tanto em projetos de céu aberto, subterrâneos. Os furos também variam,
+                    podendo ser verticais, horizontais ou inclinados.
+                  </div>
+                </div>
+              </li>
+              <li><a class="btn btn-primary text-left" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                  aria-controls="perfuracao-rochas-id" href="#perfuracao-rochas-id">Perfuração de Rochas com
+                  Campeamento</a>
+                <div class="collapse" id="perfuracao-rochas-id">
+                  <div class="card card-body bg-color no-shadow-card mt-1">Estas exigem métodos especiais de perfuração.
+                    Para os maciços
+                    rochosos que já passaram por capeamentos, é preciso a perfuração com tubulações.
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a class="btn btn-primary" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                  href="#tipos-equipamentos-id" aria-controls="tipos-equipamentos-id">
+                  Tipos de Equipamentos</a>
+                <div class="collapse" id="tipos-equipamentos-id">
+                  <div class="card card-body bg-color no-shadow-card mt-1">
+                    Martelo Pneumático
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <p class="lead">Operações de Desmonte</p>
+            <ul class="lead bg-color">
+              <li>
+                <a class="btn btn-primary" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                  aria-controls="desmonte-mecnico-id" href="#desmonte-mecnico-id">Desmonte Mecânico</a>
+                <div class="collapse" id="desmonte-mecnico-id">
+                  <div class="card card-body bg-color no-shadow-card mt-1">
+                    tem como objetivo principal de fragmentar e liberar a rocha preparando-a para as escavações, usamos,
+                    carregadeiras, draglines, tratores, escavadores
+                  </div>
+                </div>
+              </li>
+              <li><a class="btn btn-primary" data-bs-toggle="collapse" role="button" href="#desmonte-explosivos-id"
+                  aria-controls="desmonte-explosivos-id" aria-expanded="false">Desmonte por Explosivos</a>
+
+                <div class="collapse" id="desmonte-explosivos-id">
+                  <div class="card card-body bg-color no-shadow-card mt-1">Reogel , Anfo</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Public Sector Section -->
+    <section id="public-sector-section">
+      <h4 class="section-title">Obras Públicas</h4>
+      <div class="divider"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1 header-color-2">
+              Confecções de Obras Públicas.
+            </h2>
+            <p class="lead">Sendo a construção civil uma das nossas áreas de actuação,
+              a Macard & Serviços joga um papel fundamental enquanto parceiro estratégico
+              do Sector Público, oferencendo assim uma gama de serviços como:</p>
+            <ul class="lead">
+              <li class="mb-1">
+                <a class="btn btn-primary" data-bs-toggle="collapse" aria-controls="obras-publicas-de-raiz-id"
+                  href="#obras-publicas-de-raiz-id" aria-expanded="false" role="alertdialog">Construção de Obras de
+                  Raiz</a>
+                <div class="collapse" id="obras-publicas-de-raiz-id">
+                  <div class="card card-body bg-color-light no-shadow-card mt-1">
+                    Construção para obra de raiz (desde a fundação até ao firmamento) – A MACARD&SERVIÇOS faz a
+                    construção de:
+                    <ul>
+                      <li>Edifícios;</li>
+                      <li>Hospitais;</li>
+                      <li>Pontes;</li>
+                      <li>Estradas;</li>
+                      <li>Laboratórios fabris;</li>
+                      <li>Edificação de estruturas metálicas;</li>
+                      <li>Construção de bacia de rejeito.</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="mb-1">
+                <a class="btn btn-primary" data-bs-toggle="collapse" aria-controls="obras-publicas-requalificacao-id"
+                  aria-expanded="false" href="#obras-publicas-requalificacao-id">Requalificação</a>
+                <div class="collapse" id="obras-publicas-requalificacao-id">
+                  <div class="card card-body bg-color-light no-shadow-card mt-1">
+                    Requalificação: a MACARD & SERVIÇOS com o intuito de agregar melhorias as obras, faz as
+                    requalificações de:
+                    <ul>
+                      <li>Edifícios;</li>
+                      <li>Hospitais;</li>
+                      <li>Pontes;</li>
+                      <li>Estradas;</li>
+                      <li>Laboratórios fabris.</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="mb-1">
+                <a class="btn btn-primary" data-bs-toggle="collapse" aria-controls="#obras-publicas-reabilitacao-id"
+                  aria-expanded="false" href="#obras-publicas-reabilitacao-id">Reabilitação de Obras</a>
+                <div class="collapse" id="obras-publicas-reabilitacao-id">
+                  <div class="card card-body bg-color-light no-shadow-card">
+                    Reabilitação de obras: tratamos de uma alteração para uso, analisamos as respetivas medidas
+                    necessárias para o efeito, fornecendo os seguintes trabalhos:
+                    <ul>
+                      <li>Demolição;</li>
+                      <li>Remoção de pavimentos;</li>
+                      <li>Manutenção de bacias de rejeitos;</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a class="btn btn-primary" data-bs-toggle="collapse" aria-controls="obras-publicas-acabamentos"
+                  href="#obras-publicas-acabamentos" aria-expanded="false">Acabamentos</a>
+                <div class="collapse" id="obras-publicas-acabamentos">
+                  <div class="card card-body bg-color-light no-shadow-card mt-1">
+                    Acabamentos: A MACARD & SERVIÇOS usa técnicas e materiais para o remate final de estrutura interna e
+                    externa nas áreas supracitadas:
+                    <ul>
+                      <li>Drywall (teto falso- acabamentos e designs);</li>
+                      <li>Pinturas industriais e residências;</li>
+                      <li>Canalização;</li>
+                      <li>Climatização;</li>
+                      <li>Eletricidade;</li>
+                      <li>Caixilharia;</li>
+                      <li>Carpintaria;</li>
+                      <li>Serralharia e Soldadura- (Industrial e civil);</li>
+                      <li>Ladrilho- (aplicação de cerâmica, tacos e louça sanitária);</li>
+                      <li>Pinturas de estruturas metálicas </li>
+                      <li>Manutenção geral;</li>
+                      <li>Aplicação de cobertura exterior - (chapas de zinco, telhas cerâmicas, fibrocimento e placas de
+                        concreto);</li>
+                      <li>Paisagismo.</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-5 mb-3">
+            <img src="./images/slide_02.png" alt="Obras Publicas" class="img-fluid picture">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Private Sector Section -->
+    <section id="private-sector-section">
+      <h4 class="section-title">Obras Privadas</h4>
+      <div class="divider"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 mb-3">
+            <img src="./images/slide_03.png" class="img-fluid picture" alt="Obras Privadas">
+
+          </div>
+          <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1 header-color-2">
+              Tornamos Sonhos em Realidade.
+            </h2>
+            <p class="lead">A Macard & Serviços, torna o sonho da casa própria uma realidade, ajudando os seus clientes
+              a idealizar a moradia que sempre sonharam em ter.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- who we are section -->
+    <section id="quem-somos-section">
+      <h4 class="section-title">Quem Somos</h4>
+      <div class="divider"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col mb-3 d-flex justify-content-center">
+            <a class="btn btn-primary" aria-expanded="false" role="button"
+            data-bs-toggle="collapse" href="#quem-somos-historia-id">Conheça a Nossa História</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-12 col-lg-9">
+            <div class="row">             
+                <div class="collapse" id="quem-somos-historia-id">
+                  <div class="card card-body bg-color-light no-shadow-card rm-card-body-padding mt-1">
+                   <p class="lead">
+                    A empresa MACARD & SERVIÇOS. fundada em 17 de Fevereiro de 2022, resultou da necessidade sentida pelos seus sócios em aproveitar as condições favoráveis de mercado angolano representada neste acto pelo seu Director Geral, o Sr. Carlos Manuel Da Silva António. Actua em diversos sectores da vida económica do País, mormente, Prestação de serviços de: Mineração, Construção Civil, Transportes, Importações e Exportações, Limpeza geral, Limpeza e Manutenção de Silos e Tanques, Logística, Marketing e Publicidade e fornecimento de matérias diversos.  Licenciado para atividade comercial e de prestação de serviços mercantis; incluindo as subclasses:N.A. média superfície (C). 
+                   </p>
+                  </div>
+                </div>            
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-md-12">
+            <div class="row">
+
+              <div class="row-item">
+                <h2 class="featurette-heading fw-normal lh-1 header-color-2">
+                  Missão
+                </h2>
+                <p class="lead">Estrito e rigoroso cumprimento dos anseios do cliente, com vista ao
+                  alcance dos objectivos preconizados, bem como manter e dinamizar o
+                  crescimento sustentável do cliente, tendo em atenção, a preservação
+                  das tradições, hábitos e costumes das populações indígenas.</p>
+              </div>
+              <div class="row-item">
+                <h2 class="featurette-heading fw-normal lh-1 header-color-2">
+                  Visão
+                </h2>
+                <p class="lead">A nossa visão acenta no alcance dos objectivos e satisfação dos
+                  interesses do mercado, com uma perspectiva futurista, tendo em
+                  atenção a posição estratégica que se pode alcançar, com a realização
+                  do trabalho da empresa que agora se apresenta.</p>
+              </div>
+              <div class="row-item">
+                <h2 class="featurette-heading fw-normal lh-1 header-color-2">
+                  Valores
+                </h2>
+                <p class="lead">O nosso maior objectivo, é de manter os mais altos voos e se fixa no
+                  mercado, como uma exploradora com o mais elevado padrão de
+                  qualidade que se exige, utilizando métodos ultra-modernos, contando
+                  com a experiência adquirida, quer nacional, quer a nível de parceiros
+                  estrangeiros.</p>
+              </div>
+              <div class="row-item">
+                <h2 class="featurette-heading fw-normal lh-1 header-color-2">
+                  Objectivos
+                </h2>
+                <p class="lead">Prestar serviço, com zelo e diligência, na forma e nas circunstâncias,
+                  para que seja visível o seu serviço diferenciado e o cliente seja notado.</p>
+              </div>
+            </div>
+            <!-- <div class="row-item">
+              <h2 class="featurette-heading fw-normal lh1-1 header-color-2">
+                Nossa História
+              </h2>
+              <p class="lead">
+                A empresa MACARD & SERVIÇOS. fundada em 17 de Fevereiro de 2022, resultou da necessidade sentida<a href="">...</a></p>
+            </div> -->
+          </div>
+          <!-- <div class="col-md-5">
+            <img src="./images/quem-somos.jpg" alt="quem somos" width="400" class="picture">
+          </div> -->
+          <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="400" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg> -->
+
+        </div>
+      </div>
+    </section>
+    <!-- Gallery Section -->
+    <section id="galeria-section">
+      <h4 class="section-title">Galeria</h4>
+      <div class="divider"></div>
+      <div class="photo-gallery">
+        <div class="container">
+          <!-- <div class="intro">
+                <h2 class="text-center">Desfrute da Nossa Galeria</h2>
+                <p class="text-center"></p>
+            </div>  -->
+          <div class="row photos">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contacte-nos-section">
+      <h4 class="section-title">Contacte-nos</h4>
+      <div class="divider"></div>
+      <div class="container">
+        <div class="row g-10">
+          <div class="col-md-7">
+            <!-- form will be here -->
+            <form class="row" action="mailto:eder.lourenco.machado@gmail.com" method="POST">
+              <div class="col-6">
+                <div class="input-field">
+                  <input id="name" type="text" class="form-control " placeholder="Nome Completo"
+                    aria-label="Nome Completo" required aria-required="true">
+                  <span class="focus"></span>
+                </div>
+              </div>
+              <div class="col-6 mb-3">
+                <div class="input-field">
+                  <input id="email" type="email" class="form-control" placeholder="Endereço de Email" required
+                    aria-required="true">
+                  <span class="focus"></span>
+                </div>
+              </div>
+              <div class="col-12 mb-3">
+                <div class="input-field">
+                  <input id="assunto" type="text" class="form-control " aria-label="Assunto do Email"
+                    placeholder="Assunto Email" required aria-required="true">
+                  <span class="focus"></span>
+                </div>
+              </div>
+              <div class="col-12 mb-3">
+                <div class="input-textarea">
+                  <textarea class="form-control" name="conteudoEmail" id="conteudoEmail" cols="30" rows="10"
+                    placeholder="Conteúdo do Email" required aria-required="true"></textarea>
+                  <span class="focus"></span>
+                </div>
+              </div>
+              <div class="col mb-2">
+                <button class="btn btn-primary">Enviar</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-sm col-md-5 mb-3">
+            <!-- google map will be placed here -->
+            <div class="card mb-3">
+              <div class="card-body">
+                <!-- <h5 class="card-title header-color-1">Macard & Serviços - Localização</h5> -->
+                <span class="address header-color-3">Distrito Urbano do Benfica, Urbanização o Lar do Patriota, n.º 139
+                  – E, Luanda, Angola</span>
+                <p class="card-text">
+
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13256.369616358133!2d13.21080803187302!3d-8.959035895807707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a521fde79d44841%3A0xe37c87f34bb6c7fd!2sLar%20do%20Patriota%20condominium!5e0!3m2!1spt-PT!2sus!4v1708726184771!5m2!1spt-PT!2sus"
+                    width="100%" height="234" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </p>
+              </div>
+            </div>
+            <div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-telephone header-color-2" viewBox="0 0 16 16">
+                  <path
+                    d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                </svg> <span class="header-color-2"> 940370052 | 940369967</span>
+              </div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-envelope header-color-2" viewBox="0 0 16 16">
+                  <path
+                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                </svg> <span class="header-color-2"> macardservicoslda@gmail.com</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center px-5">
+      <div class="col-md-4 d-flex align-items-center">
+        <!-- <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+          </a> -->
+        <span class="mb-3 mb-md-0 text-body-secondary header-color-2">© <span id="footer"></span> Macard & Serviços,
+          Lda.</span>
+      </div>
+
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-body-secondary" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-instagram header-color-2" viewBox="0 0 16 16">
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+            </svg>
+          </a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+              height="16" fill="currentColor" class="bi bi-twitter-x header-color-2" viewBox="0 0 16 16">
+              <path
+                d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+            </svg></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+              height="16" fill="currentColor" class="bi bi-facebook header-color-2" viewBox="0 0 16 16">
+              <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+            </svg></a></li>
+      </ul>
+      <!-- Back to top button -->
+      <button type="button" class="btn btn-primary btn-floating btn-lg me-2" id="btn-back-to-top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
+        </svg>
+      </button>
+    </footer>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="./js/action.js"></script>
+  <!-- gallery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+
+  <!-- slider partners (slick) -->
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./js/slider.js" type="text/javascript">
+  </script>
+
+</body>
+
+</html>

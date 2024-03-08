@@ -1,0 +1,354 @@
+/* Globar variables definition */
+:root {
+  --bs-emphasis-color: #96e9c6;
+  --green-color: #6d7673; /* will be reusable */
+  --dark-bg-section: #210139;
+  --light-bg-section: #6c22a6;
+  /* redifine this variable*/
+  --bs-body-font-family: Raleway, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-secondary-bg-color: #0d6efd;
+  --bs-navbar-brand-font-size: 1rem; /*before 1.25rem*/
+  --bs-nav-link-font-size: 1rem;
+}
+
+/* Preventing the whole from changing its size */
+* {
+  box-sizing: border-box;
+}
+
+/* Section definition */
+
+section {
+  min-height: 100vh;
+}
+
+#servicos-section,
+#quem-somos-section,
+#contacte-nos-section,
+#galeria-section,
+#clientes-section,
+#public-sector-section,
+#miner-treatment-section,
+#private-sector-section {
+  padding-top: 5rem;
+  /* max-width: 69.75rem; 1116px*/
+}
+
+#clientes-section,
+#public-sector-section,
+#quem-somos-section,
+#contacte-nos-section {
+  background-color: var(--light-bg-section);
+}
+
+#servicos-section,
+#miner-treatment-section,
+#private-sector-section,
+#galeria-section,
+footer {
+  background-color: var(--dark-bg-section);
+}
+
+.section-title {
+  margin-top: 2rem;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: var(--bs-emphasis-color);
+}
+
+/* chanage cursor color */
+input,
+textarea {
+  caret-color: whitesmoke;
+}
+
+/* Two backgrounds for the website */
+.bg-color {
+  background-color: #210139;
+}
+
+.bg-color-light {
+  background-color: #6c22a6;
+}
+
+/* menus definition */
+.navbar-collapse {
+  flex-grow: 0; /* will prevent the menus from growing*/
+}
+
+.nav-link {
+  font-size: var(--bs-nav-link-font-size) !important;
+}
+
+.navbar {
+  --bs-navbar-brand-font-size: 1rem; /*will change text next to website brand */
+  --bs-navbar-nav-link-padding-x: 1.5rem;
+}
+
+.navbar-dark,
+.navbar[ds-bs-theme="dark"] {
+  --bs-navbar-brand-color: #96e9c6;
+  --bs-navbar-active-color: #96e9c6;
+}
+
+/* Buttons */
+.btn-primary {
+  --bs-btn-bg: var(--dark-bg-section);
+  --bs-btn-border-color: var(--dark-bg-section);
+  --bs-btn-color: var(--bs-emphasis-color);
+}
+
+.btn-outline-secondary {
+  /* change btn silder color */
+  --bs-btn-color: var(--green-color);
+  --bs-btn-hover-bg: var(--bs-secondary-bg-color);
+  --bs-btn-hover-border-color: var(--bs-secondary-bg-color);
+}
+
+/* Carousel Definition */
+.carousel-inner {
+  /* background-color: rgba(127, 10, 216, 0.937);  */
+  /* height: 100vh; */
+  background-color: #6c22a6;
+}
+
+/* padding space top and bottom | change Bootstrap class*/
+.py-5 {
+  padding-top: 6.5rem !important;
+  padding-bottom: 6.5rem !important;
+}
+
+/* Heading colors */
+.header-color-1 {
+  color: #fff;
+}
+
+.header-color-2 {
+  color: var(--bs-emphasis-color);
+}
+
+.header-color-3 {
+  color: #6c22a6;
+}
+
+/* body text or paragraph  */
+.lead {
+  color: #fff;
+  /* font-size: 1.1rem; */
+  font-size: 0.95rem;
+  text-align: justify;
+  word-spacing: -1px;
+  line-height: 1.7rem;
+}
+
+.text-left {
+  text-align: left; /* Set text to left */
+}
+
+.mb-3.mb-md-0.text-body-secondary {
+  color: var(--bs-emphasis-color) !important;
+}
+
+.fw-bold {
+  font-weight: 600 !important;
+}
+
+/* Card Definition*/
+.card {
+  box-shadow: 5px 10px 18px #888888;
+  /* --bs-card-height: 100%; */
+}
+
+.card-size {
+  --bs-card-height: 420px;
+}
+
+.card-text {
+  text-align: justify;
+  /* word-spacing: -0.05em; */
+  hyphens: auto; /* https://developer.mozilla.org/docs/Web/CSS/hyphens */
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+}
+
+.rm-card-body-padding {
+  padding: 0;
+}
+
+.no-shadow-card {
+  box-shadow: none; /*will remove */
+  border: 0;
+}
+
+.card > img {
+  height: 170px;
+}
+
+/* large column behavior */
+.col-lg-4 {
+  /*if screen is large >= 922 px will ocupy only 4 columns out of 12 columns */
+
+  flex: 1 1 0; /*grow and shrink and will keep cards with the same size */
+  min-width: 15rem;
+  max-width: 18rem;
+}
+
+/* row definition */
+.row {
+  justify-content: center;
+  margin-right: calc(-0.3 * var(--bs-gutter-x));
+  margin-left: calc(-0.3 * var(--bs-gutter-x));
+}
+
+.row-item {
+  flex-basis: 28rem;
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin-right: 1.5rem;
+  max-width: 40rem;
+}
+
+/* horizontal bar for the titles */
+.divider {
+  width: 95%;
+  height: 0.4rem;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.5rem;
+  margin-bottom: 5rem;
+  background: linear-gradient(
+    90deg,
+    rgba(150, 233, 198, 1) 51%,
+    rgba(33, 1, 57, 1) 100%
+  );
+  /* https://cssgradient.io/ */
+}
+
+
+/* Image corner definitions */
+.rounded-corner {
+  border-radius: 5px;
+}
+
+.picture {
+  border-radius: 5px;
+  box-shadow: 5px 10px 18px #888888;
+}
+
+/* Gallery */
+.row.photos div {
+  padding-bottom: 1.5rem;
+}
+
+.row.photos div img {
+  border-radius: 5px;
+  border: 2px solid var(--bs-emphasis-color);
+}
+
+.row.photos {
+  max-height: 27rem;
+  overflow-y: auto; /* will apply the scroll when images are higher than available space */
+  scrollbar-width: thin;
+  scrollbar-color: var(--bs-emphasis-color) var(--dark-bg-section);
+  /* https://www.youtube.com/watch?v=v_8CmC6cwUs */
+}
+
+/* Media Queries - Fixing behaviour */
+
+@media (min-width: 1200px) {
+  .fixed-top {
+    padding: 0 3.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .item,
+  .row.photos img {
+    height: 195px;
+    width: 261px;
+  }
+
+  .row.photos div {
+    padding-bottom: 13.5rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  section {
+    min-height: 0vh;
+  }
+}
+
+@media (width: 1280px) {
+  .carousel-inner {
+    height: 100vh; /* will prevent slider section from show small portion of white background */
+  }
+}
+
+/* Form controls Bootstrap */
+.form-control {
+  background-color: var(--light-bg-section);
+  border: var(--bs-border-width) solid var(--bs-emphasis-color);
+  color: var(--bs-emphasis-color) !important;
+}
+
+.form-control::placeholder,
+.form-control:focus::placeholder {
+  color: var(--bs-emphasis-color);
+  opacity: 1;
+}
+
+/* https://github.com/twbs/bootstrap/issues/22559 */
+.form-control:focus {
+  outline: none;
+  box-shadow: none !important;
+  border: 1px solid var(--bs-emphasis-color);
+  background-color: var(--light-bg-section);
+  color: #fff !important;
+  font-weight: bold;
+}
+
+/* Onclick animation inside form controls */
+
+.input-field,
+.input-textarea {
+  position: relative;
+}
+
+.focus {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;  
+  background-color: #9021e553;
+  border-radius: 5px;
+  transition: 0.5s;
+  
+}
+
+#name:focus ~ .focus,
+#email:focus ~ .focus,
+#assunto:focus ~ .focus,
+textarea:focus ~ .focus {
+  /* ~.focus will call this class and apply its style */
+  width: 100%;
+  
+}
+
+/* footer */
+.address {
+  font-size: 0.8rem;
+}
+
+/* back to top btn */
+#btn-back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 10px;
+  display: none;
+}
