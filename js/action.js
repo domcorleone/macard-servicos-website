@@ -21,6 +21,7 @@ for (let count = 1; count < totalPhotos; count++) {
   a.setAttribute("data-lightbox", "photos");
   img.setAttribute("class", "img-fluid");
   img.setAttribute("src", "images/galeria/foto (" + count + ").jpeg");
+  img.setAttribute("alt", "foto ("+ count +")");
 
 
   a.appendChild(img);
