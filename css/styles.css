@@ -189,7 +189,9 @@ textarea {
 }
 
 .card > img {
-  height: 170px;
+  height: 170px;  
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 /* large column behavior */
@@ -335,6 +337,7 @@ textarea {
 }
 
 #name:focus ~ .focus,
+#input-captcha:focus~ .focus,
 #email:focus ~ .focus,
 #assunto:focus ~ .focus,
 textarea:focus ~ .focus {
@@ -353,4 +356,8 @@ textarea:focus ~ .focus {
   bottom: 30px;
   right: 10px;
   display: none;
+}
+
+canvas {
+  max-width: 100%;
 }
