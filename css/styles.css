@@ -108,7 +108,8 @@ textarea {
   --bs-btn-hover-border-color: var(--bs-secondary-bg-color);
 }
 
-.btn { /* Change transition time for btn*/
+.btn {
+  /* Change transition time for btn*/
   transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out,
     border-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 }
@@ -189,7 +190,7 @@ textarea {
 }
 
 .card > img {
-  height: 170px;  
+  height: 170px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
@@ -337,10 +338,11 @@ textarea {
 }
 
 #name:focus ~ .focus,
-#input-captcha:focus~ .focus,
+#input-captcha:focus ~ .focus,
 #email:focus ~ .focus,
 #assunto:focus ~ .focus,
-textarea:focus ~ .focus {
+textarea:focus ~ .focus,
+#captcha-input:focus ~ .focus {
   /* ~.focus will call this class and apply its style */
   width: 100%;
 }
