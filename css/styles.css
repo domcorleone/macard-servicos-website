@@ -290,7 +290,7 @@ textarea {
   }
 }
 
-@media (width: 1280px) {
+@media (min-width: 1400px), (width: 1280px) {
   .carousel-inner {
     height: 100vh; /* will prevent slider section from show small portion of white background */
   }
