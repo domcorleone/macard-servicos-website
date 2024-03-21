@@ -340,7 +340,7 @@ textarea {
 #name:focus ~ .focus,
 #input-captcha:focus ~ .focus,
 #email:focus ~ .focus,
-#assunto:focus ~ .focus,
+#subject:focus ~ .focus,
 textarea:focus ~ .focus,
 #captcha-input:focus ~ .focus {
   /* ~.focus will call this class and apply its style */
