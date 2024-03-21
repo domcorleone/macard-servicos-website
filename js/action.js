@@ -22,6 +22,7 @@ for (let count = 1; count < totalPhotos; count++) {
   img.setAttribute("class", "img-fluid");
   img.setAttribute("src", "images/galeria/foto (" + count + ").jpeg");
   img.setAttribute("alt", "foto (" + count + ")");
+  img.setAttribute("loading", "lazy");
 
 
   a.appendChild(img);
