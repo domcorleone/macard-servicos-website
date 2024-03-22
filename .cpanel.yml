@@ -6,3 +6,7 @@ deployment:
     - /bin/cp css/styles.css $DEPLOYPATH
     - /bin/cp css/galeria.css $DEPLOYPATH
     - /bin/cp css/captcha.css $DEPLOYPATH
+    - /bin/cp js/action.js $DEPLOYPATH
+    - /bin/cp js/captcha.css $DEPLOYPATH
+    - /bin/cp js/slider.js $DEPLOYPATH
+   
